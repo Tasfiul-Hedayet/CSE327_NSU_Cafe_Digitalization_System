@@ -1,26 +1,39 @@
-html,
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  white-space: pre-wrap; 
+  word-break: break-all; 
+}
+
+p code {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+#__next {
+  height: 100%;
+}
+
+#nav-mobile {
+  min-height: 170px;
+}
+
+.nav-item.dropdown .dropdown-item {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
+.nav-item.dropdown .dropdown-item a {
   color: inherit;
-  text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.nav-item.dropdown .dropdown-item .navbar-item {
+  width: 100%;
+  padding: .55rem 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.result-block-container .result-block {
+  opacity: 1;
 }
